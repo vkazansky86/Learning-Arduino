@@ -1,0 +1,13 @@
+int val;                               // определяем переменную
+
+void setup() {
+Serial.begin(9600);                    // set the baud rate at 9600
+
+}
+
+void loop() {
+  val=Serial.read();                   // считываем переменную с порта
+  if(val=='R') {                       // если переменная равна R
+     Serial.println("Hello World!");   // выводим в консоль Hello World
+   }
+ }
